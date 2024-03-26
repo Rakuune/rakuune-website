@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
-function ContactForm() {
+const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -9,7 +9,7 @@ function ContactForm() {
   })
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value } = e.target
     setFormData(prevState => ({
       ...prevState,
       [name]: value
@@ -70,4 +70,4 @@ function ContactForm() {
   )
 }
 
-export default ContactForm;
+export default ContactForm

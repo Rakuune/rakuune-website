@@ -7,7 +7,7 @@ const handler = () => {
     const [newNumber, setNewNumber] = useState('')
     const [newEmail, setNewEmail] = useState('')
     const [message, setMessage] = useState(null)
-    const [notificatin, setNotification] = useState(null)
+    const [notification, setNotification] = useState(null)
 
     const handleNameChange = (event) => {
         console.log(event.target.value)
@@ -56,3 +56,5 @@ const handler = () => {
         }
     }
 }
+
+export default handler

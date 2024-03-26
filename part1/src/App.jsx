@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import ContactForm from './components/ContactForm'
+import CustomNotification from './components/Notification'
 import Persons from './components/Persons'
 import handler from './services/handlers'
 import nameService from './services/Names'
