@@ -45,7 +45,7 @@ const handler = () => {
                         setMessage('')
                         setNotification(`Added ${response.name}`);
                         setTimeout(() => {
-                            setMessage(null)
+                            setNotification(null)
                         }, 5000)
                     }
                 })

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import './ContactForm.css';
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -22,48 +22,47 @@ const ContactForm = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit} style={{ fontFamily: 'Arial, sans-serif' }}>
-      <div style={{ marginBottom: '10px' }}>
+    <form onSubmit={handleSubmit} className="contactForm">
+      <div className="inputField">
         <input
           type="text"
           name="name"
           value={formData.name}
           onChange={handleChange}
           placeholder="Name"
-          style={{ width: '100%', padding: '10px' }}
+          className="inputField" 
         />
       </div>
-      <div style={{ marginBottom: '10px' }}>
+      <div className="inputField">
         <input
           type="email"
           name="email"
           value={formData.email}
           onChange={handleChange}
           placeholder="Email"
-          style={{ width: '100%', padding: '10px' }}
+          className="inputField" 
         />
       </div>
-      <div style={{ marginBottom: '10px' }}>
+      <div className="inputField">
         <input
           type="tel"
           name="phone"
           value={formData.phone}
           onChange={handleChange}
           placeholder="Phone"
-          style={{ width: '100%', padding: '10px' }}
+          className="inputField" 
         />
       </div>
-      <div style={{ marginBottom: '10px' }}>
+      <div className="inputField">
         <textarea
           name="message"
           value={formData.message}
           onChange={handleChange}
           placeholder="Message"
-          rows="5"
-          style={{ width: '100%', padding: '10px' }}
+          className="textAreaField" 
         />
       </div>
-      <button type="submit" style={{ padding: '10px 20px', backgroundColor: '#0000FF', color: 'white', border: 'none', cursor: 'pointer' }}>
+      <button type="submit" className="Button">
         SUBMIT
       </button>
     </form>
