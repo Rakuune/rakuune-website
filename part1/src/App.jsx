@@ -28,6 +28,9 @@ const App = () => {
                 <h1>Testi nyt alkuun</h1>
             </div>
             <div className="profile">
+                <div className="profile-image">
+                    <img src="/profpic.png" alt="Valtteri Rantala"></img>
+                </div>
                 <div className="profile-content">
                     <h2>About me</h2>
                     <p>
