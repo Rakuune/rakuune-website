@@ -1,9 +1,8 @@
 .contactForm {
   display: grid;
   font-family: 'Arial, sans-serif';
-  align-content: center;
-  margin-left: 600px;
-  margin-right: 600px;
+  align-self: center;
+  width:30%;
 }
 
 .inputField {
@@ -11,8 +10,6 @@
   padding: 5px;
   margin-bottom: 2px;
 }
-
-
 
 .textAreaField {
   width: 100%;
